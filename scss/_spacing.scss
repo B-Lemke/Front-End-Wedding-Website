@@ -1,0 +1,48 @@
+//Variables for spacing
+
+$max-width: 1200px;
+
+$gutter: 10px;
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.content {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 100%;
+    /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+    overflow-x: hidden;
+    /* Enable scrolling on the page. */
+    overflow-y: auto;
+    /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
+    perspective: 2px;
+}
+
+.component-content{
+    width: 100%;
+    max-width: $max-width;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+ html {
+     min-height: 100vh;
+ }
+
+ 

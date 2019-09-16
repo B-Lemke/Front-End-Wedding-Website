@@ -1,0 +1,55 @@
+// .row.color-table {
+//     & .color-block {
+//     }
+// }
+
+
+.color-block {
+    margin: $gutter;
+    border: 1px solid black;
+
+}
+
+%color-header-base {
+    min-height: 40px; 
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.color-header {
+    &-primary{
+        @extend %color-header-base;
+        background: $primary;
+        &:hover {
+            background: $primary-light;
+        }
+    }
+    &-secondary{
+        @extend %color-header-base;
+        background: $secondary;
+        &:hover {
+            background: $secondary-light;
+        }
+    }
+    &-light{
+        @extend %color-header-base;
+        background: $light;
+        &:hover {
+            background: $light-light;
+        }
+    }
+    &-tan {
+        @extend %color-header-base;
+        background: $tan;
+        &:hover {
+            background: $tan-light
+        }
+    }
+    &-grey {
+        @extend %color-header-base;
+        background: $grey;
+        &:hover {
+            background: $grey-light
+        }
+    }
+}

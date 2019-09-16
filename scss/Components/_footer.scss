@@ -1,0 +1,40 @@
+footer {
+    height: auto;
+    background-color: $secondary;
+    text-align: center;
+    color: $light;
+    & a {
+        padding: 0px;
+    }
+}
+
+.github-link {
+    position: relative;
+    @include link-underline(100%);
+}
+
+
+.footer-links.row{
+    max-width: $max-width;
+    margin: auto;
+}
+
+.footer-link-list {
+    padding: 0;
+    list-style: none;
+    & .footer-link-item {
+        position: relative;
+        text-decoration: none;
+        @include link-underline(20%);
+
+        }
+    
+}
+
+div .disclaimer {
+    border-top: 1px solid $light-dark;
+    padding-top: 10px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}

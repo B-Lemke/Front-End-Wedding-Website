@@ -1,0 +1,25 @@
+// Colors
+$light-brown: #8d7361;
+$dark-brown: #50423d;
+$tan: #c9bbae;
+$cream: #eeebe7;
+$grey: #8b8da0;
+
+// Color Assignments
+$primary:       $light-brown !default;
+$secondary:     $dark-brown !default;
+$light:         $cream;
+
+//Lightened Colors
+$primary-light:       lighten($light-brown, 15%);
+$secondary-light:     lighten($dark-brown, 15%);
+$light-light:     lighten($cream, 15%);
+$tan-light:     lighten($tan, 15%);
+$grey-light:     lighten($grey, 15%);
+
+//Darkened Colors
+$primary-dark:       darken($light-brown, 15%);
+$secondary-dark:     darken($dark-brown, 15%);
+$light-dark:         darken($cream, 15%);
+$tan-dark:         darken($tan, 15%);
+$grey-dark:         darken($grey, 15%);

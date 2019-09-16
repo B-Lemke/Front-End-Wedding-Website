@@ -1,0 +1,47 @@
+// Crimson Pro
+@import url('https://fonts.googleapis.com/css?family=Crimson+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+$font-family-sans-serif:      "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-serif:           'Crimson Pro', "Roboto", "Times New Roman", serif;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-handwritten:     "Indie Flower";
+
+//Font family classes
+.serif-font {
+    font-family: $font-family-serif;
+}
+.sans-serif-font {
+    font-family: $font-family-sans-serif;
+}
+.handwritten-font {
+    font-family: $font-family-handwritten;
+}
+
+body {
+    font-size: 1.4em;
+}
+
+//Font sizes
+.text-large {
+    font-size: 3em;
+}
+
+.text-normal {
+    font-size: 1.4em;
+}
+
+.text-small {
+    font-size: 1.2em;
+}
+
+.text-xsmall {
+    font-size: 1em;
+}
+
+.content {
+    font-family: $font-family-serif;
+    font-size: 18px;
+    min-height: 200px;
+}

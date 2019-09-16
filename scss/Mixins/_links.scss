@@ -1,0 +1,40 @@
+@mixin link-underline($width: 100%) {
+    text-decoration: none;
+    color: $cream;
+    
+    & a {
+        text-decoration: none;
+        color: $cream;
+    }
+
+    &:hover {
+        color: $light-light;
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        margin-left: (100% - $width) / 2;
+        margin-right: (100% - $width) / 2;
+        width: $width;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: $cream;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+      }
+    
+    &:hover:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+
+    &:hover {
+        color: $light-light;
+        text-decoration: none;
+    }   
+}

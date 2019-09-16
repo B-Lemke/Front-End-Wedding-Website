@@ -1,0 +1,9 @@
+//Pixels to percent
+@function pxtopercent($target, $parent: $max-width) {
+  @return percentage($target / $parent);
+}
+
+@mixin background-opacity($color, $opacity: 0.3) {
+  background: $color; /* The Fallback */
+  background: rgba($color, $opacity);
+}

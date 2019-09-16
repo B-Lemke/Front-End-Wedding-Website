@@ -1,0 +1,30 @@
+// Custom.scss
+
+//Helpers
+@import "Helpers/converters";
+
+//Mixins
+@import "Mixins/links";
+
+//Import Variables and Functions
+@import "colors";
+@import "functions";
+@import "fonts"; //Includes External Fonts
+@import "spacing";
+@import "variables";
+
+
+
+//Import Components 
+@import "Components/colorBlock";
+@import "Components/header";
+@import "Components/footer";
+@import "Components/sections";
+@import "Components/splashImage";
+
+@import "../bootstrap/scss/bootstrap";
+
+body {
+    background-color: $cream;
+} 
+

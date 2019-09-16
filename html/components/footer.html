@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../../css/main.css" rel="stylesheet" type="text/css">
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon//apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon//apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon//apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon//apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon//apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon//apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/images/favicon//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon//favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <title>Footer</title>
+</head>
+<body>
+    <header></header>
+    <div class="component-content">
+        <button onclick="addIpsum()" class="btn btn-primary d-inline">Add Content</button>
+        <button onclick="clearIpsum()" class="btn btn-primary d-inline ml-1 ">Clear Content</button>
+        <div id="ipsum-container">
+
+        </div>
+    </div>
+    <footer class="container-fluid">
+        <div class="copyright-message my-2">
+            <h4>Website Copyright &copy; 2019 - <a class="github-link" href="https://b-lemke.github.io">Broderick Lemke</a></h4>
+        </div>
+        <div class="row footer-links">
+            <div class="col-md-4">
+                <ul class="footer-link-list">
+                    <li class="footer-link-item"><a href="#">Footer link 1</a></li>
+                    <li class="footer-link-item"><a href="#">Footer link 2</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul class="footer-link-list">
+                    <li class="footer-link-item"><a href="#">Footer link 1</a></li>
+                    <li class="footer-link-item"><a href="#">Footer link 2</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul class="footer-link-list">
+                    <li class="footer-link-item"><a href="#">Footer link 1</a></li>
+                    <li class="footer-link-item"><a href="#">Footer link 2</a></li>
+                </ul>
+            </div>
+
+
+            <div class="disclaimer">
+                    <h6>The Office and all of its characters are property of the National Broadcast Company (NBC). This website and wedding theme were simply born out of love of the series.</h6>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var ipsumEl = document.getElementById("ipsum-container");
+        function addIpsum(){
+            
+            ipsumEl.innerHTML += "<p>Yes, I've heard 'women and children first', but we do not employ children. We are not a sweatshop, thankfully. And women are equal in the workplace, by law, so if I let them out first... I have a lawsuit on my hands.   I am not offended by homosexuality. In the sixties I made love to many, many women, often outdoors in the mud and rain. It's possible a man could've slipped in there. There'd be no way of knowing.   The Taliban's the worst. Great Heroin, though.   Big Tuna is a super ambitious guy, you know? Cut your throat to get ahead kind of guy, but I mean I'm not threatened by him. I went to Cornell, you ever heard of it. I graduated in four years. I never studied once. I was drunk the whole time, and I sang in the acappella group, 'Here Comes Treble.'   Studies have shown that more information gets passed through watercooler gossip than through official memos - which puts me at a disadvantage because... I bring my own water to work.   You give me a gift? Bam! Thank You note. You invite me somewhere? Pow! RSVP. You do me a favor? Wham! Favor returned. Do not test my politeness.   You know what can't fit in a bottle are the twenty little trips I take to the cooler. And the twenty little scans I do of everybody to make sure everything's running smoothy and the twenty conversations that I have with Stanley.   Nobody steals from Creed Bratton and gets away with it. The last person to do this disappeared. His name? Creed Bratton   I'm always one step ahead... like a carpenter... that makes stairs.   Jim is my enemy. But it turns out that Jim is also his own worst enemy. And the enemy of my enemy is my friend. So Jim, is actually my friend. But, because he is his own worst enemy, the enemy of my friend is my enemy so actually Jim is my enemy. But--   The new receptionist is also named Kelly. So Kelly Kapour has decided to hover around my desk so that she can run into Charles' office every time he calls for Kelly. She thinks that if she says 'you wanted me' enough he will in fact want her. It's not the worst plan shes ever had.   Guess what? I have flaws. What are they? Oh I donno, I sing in the shower? Sometimes I spend too much time volunteering. Occasionally I'll hit somebody with my car. So sue me-- no, don't sue me. That is opposite the point I'm trying to make.   Toby is in HR, which technically means he works for corporate, so he's really not a part of our family. Also, he's divorced, so he's really not a part of his family.</p>";
+        }
+
+        function clearIpsum(){
+            ipsumEl.innerHTML = "";
+        }
+    </script>
+</body>
+</html>
